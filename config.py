@@ -15,7 +15,11 @@ WORKDIR = os.path.abspath('.')
 
 SEQ_SRC = './data/'
 
-TRACKER_SRC = 'D:\\STUDY\\PAPER2\\CODE\\ACSNet' # './trackers/'
+TRACKER_SRC = './trackers/'
+NATIVE_TRACKER = False
+
+if not NATIVE_TRACKER:
+    TRACKER_SRC = 'D:\\STUDY\\PAPER2\\CODE\\ACSNet'
 
 RESULT_SRC = './results/{0}/' # '{0} : OPE, SRE, TRE'
 
@@ -25,7 +29,7 @@ SAVE_RESULT = True
 
 OVERWRITE_RESULT = False
 
-SAVE_IMAGE = True
+SAVE_IMAGE = False
 
 USE_INIT_OMIT = True
 

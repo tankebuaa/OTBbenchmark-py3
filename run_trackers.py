@@ -4,8 +4,9 @@ from PIL import Image
 from config import *
 from scripts import *
 import sys
-sys.path.append("D:\\STUDY\\PAPER2\\CODE\\ACSNet")
-from task.run_acsnet import *
+if not NATIVE_TRACKER:
+    sys.path.append("D:\\STUDY\\PAPER2\\CODE\\ACSNet")
+    from task.run_acsnet import *
 
 def run_trackers(trackers, seqs, evalType, shiftTypeSet):
     tmpRes_path = RESULT_SRC.format('tmp/{0}/'.format(evalType))
@@ -45,7 +46,10 @@ def run_trackers(trackers, seqs, evalType, shiftTypeSet):
                 subS = subSeqs[idx]
                 subS.name = s.name + '_' + str(idx)
 
-                os.chdir(TRACKER_SRC)# + t) 不需要名称对应
+                if NATIVE_TRACKER:
+                    os.chdir(TRACKER_SRC + t)
+                else:
+                    os.chdir(TRACKER_SRC)# + t) 不需要名称对应
                 funcName = 'run_{0}(subS, rp, SAVE_IMAGE)'.format(t)
                 # import task.run_acsnet
                 try:
