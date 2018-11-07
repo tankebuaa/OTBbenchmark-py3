@@ -12,7 +12,7 @@ ex = Experiment("OTB benchmark")
 @ex.config
 def cfg():
     arg_trackers = ['acsnet']
-    arg_loadSeqs = ['CarScale']  # 'All'
+    arg_loadSeqs = 'tb50' # 'All'
     arg_evalTypes = ['OPE']  # ['OPE', 'SRE', 'TRE']
 
 @ex.automain

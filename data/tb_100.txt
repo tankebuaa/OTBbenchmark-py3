@@ -52,7 +52,7 @@ Girl2	SV, OCC, DEF, MB, OPR
 Gym	SV, DEF, IPR, OPR
 Human2	IV, SV, MB, OPR
 Human3	SV, OCC, DEF, OPR, BC
-Human4-2	IV, SV, OCC, DEF
+Human4	IV, SV, OCC, DEF
 Human5	SV, OCC, DEF
 Human6	SV, OCC, DEF, FM, OPR, OV
 Human7	IV, SV, OCC, DEF, MB, FM

@@ -25,7 +25,7 @@ Girl	SV, OCC ,IPR, OPR
 Human3	SV, OCC, DEF, OPR, BC
 Human4	IV, SV, OCC, DEF
 Human4-1	IV, SV, OCC, DEF
-Human4-2	IV, SV, OCC, DEF
+Human4	IV, SV, OCC, DEF
 Human6	SV, OCC, DEF, FM, OPR, OV
 Human9	IV, SV, DEF, MB, FM
 Ironman	IV, SV, OCC, MB, FM, IPR, OPR, OV, BC, LR
